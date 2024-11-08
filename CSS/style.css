@@ -1,0 +1,136 @@
+::selection {
+    background-color: rgb(0, 123, 255) ;
+    color:rgb(255, 255, 255);
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+body::-webkit-scrollbar-track {
+    background-color: rgb(185, 218, 253);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(0, 123, 255), rgb(0, 70, 145));
+    /* border-radius: 10px; */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(rgb(0, 70, 145), rgb(0, 123, 255));
+    /* border-radius: 10px; */
+}
+/* ******************************** */
+.carousel-item img {
+    width: 100vw;
+    height: 100vh;
+}
+
+.carousel-caption {
+    background-color: #0000003e;
+    padding: 50px 30px;
+    border-radius: 20px;
+}
+
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+
+/* ************************************************************** */
+.background-player {
+    background-image: url(../images/_1_ND_PREVIA_ALEGRIA_GRUPO_MBAPPE_GettyImages_2180330154.app.webp);
+    background-attachment: fixed;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.ovelay {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.578);
+}
+
+/* *************************************************************** */
+.moving::after {
+    content: "" !important;
+    position: absolute !important;
+    z-index: 2 !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 25% !important;
+    height: 0 !important;
+    background-color: rgba(57, 156, 188, 0.622) !important;
+    opacity: 1;
+}
+
+.moving:hover:after {
+    width: 100% !important;
+    height: 100% !important;
+    transition: 0.5s !important;
+    opacity: 0.3;
+}
+
+.moving::before {
+    content: "" !important;
+    position: absolute !important;
+    z-index: 1 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    width: 25% !important;
+    height: 0 !important;
+    background-color: rgba(57, 156, 188, 0.622) !important;
+    opacity: 1;
+}
+
+.moving:hover:before {
+    width: 100% !important;
+    height: 100% !important;
+    transition: 0.5s !important;
+    opacity: 0.3;
+}
+
+.card-img-overlay {
+    z-index: 3 !important;
+}
+
+/* ******************************************* */
+.background-player-2 {
+    background-image: url(../images/fixed-background/image.webp);
+    background-attachment: fixed;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/* ************************************************ */
+.card-hover {
+    transform: scale(1);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card-hover:hover {
+    transform: scale(0.9);
+}
+
+/* ****************************************************/
+.progress-bar {
+    width: 10% !important;
+}
+
+.cont:hover .progress-bar {
+    width: 100% !important;
+}
+
+.img-scall {
+    transform: scale(0.99);
+    transition: 0.5s;
+}
+
+.cont:hover .img-scall {
+    transform: scale(1);
+}
+/* *********************************************** */
+.nav-link-hover:hover {
+    text-decoration: underline;
+}
